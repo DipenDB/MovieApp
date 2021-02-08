@@ -2,6 +2,7 @@
 import React,{useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import "./carousel.css";
+import {width} from "@fortawesome/free-solid-svg-icons/faTv";
 
 
 
@@ -12,7 +13,7 @@ const CAROUSEL =()=>{
         setIndex(selectedIndex);
     };
     return(
-        <div className="container mt-1">
+        <div className="container-fluid mt-1" >
         <Carousel className="carousel-inner"  activeIndex={index} onSelect={handleSelect} interval={5000} fade={true}>
             <Carousel.Item>
                 <img

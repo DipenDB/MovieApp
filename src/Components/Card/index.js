@@ -15,7 +15,7 @@ const CARD =(props)=>{
 
 
 
-    console.log(props)
+    // console.log(props)
     return(
 
          // <Card key={`${IMAGE_BASE_URL}${props.trendings.id}`} className="cards mt-2">
@@ -44,7 +44,7 @@ const CARD =(props)=>{
          //
          // </Card>
 
-            <div key={`${IMAGE_BASE_URL}${props.trendings.id}`} className="card-flyer">
+            <div key={props.trendings.id} className="card-flyer">
                 <div className="text-box">
                     <div className="image-box">
                         <img src={`${IMAGE_BASE_URL}${props.trendings.poster_path}`} alt="Card image cap"/>
